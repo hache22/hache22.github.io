@@ -1,0 +1,67 @@
+---
+const personalImageAlt = "hache photo";
+import Badge from "@/components/Badge.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import Mail from "@/components/icons/Mail.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import Github from "./icons/Github.astro";
+import Certificaciones from "./icons/Certificaciones.astro";
+---
+
+<div class="px-2">
+    <div class="py-44 pb-24">
+        <img
+            class="rounded-full size-12 mb-4"
+            src="dist/projects/PERFIL_redimensionado.jpg"
+            alt={personalImageAlt}
+        />
+        <h1
+            class="text-white text-3xl lg:text-5xl md:text-4xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+        >
+            Soy Horacio Laphitz
+            <a
+                href="https://www.linkedin.com/in/horacio-laphitz/"
+                target="_blank"
+                rel="noopener"
+                class="flex justify-center items-center"
+            >
+                <Badge>Disponible</Badge>
+            </a>
+        </h1>
+        <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+            <span class="text-yellow-400 opacity-90">
+                Data Analyst Ssr & Python Developer Ssr</span
+            ><br />
+            <span class="text-blue-200 opacity-80"
+                >+2.5 años de Experiencia</span
+            >
+            <br />
+            <span>
+                Especialista en Desarrollo de Soluciones Basadas en Datos</span
+            ><br />
+            <span class="text-red-200/90"
+                >📌 Posadas - Misiones , Argentina
+            </span>
+        </h2>
+        <nav class="flex gap-4 mt-8">
+            <SocialPill href="https://www.linkedin.com/in/horacio-laphitz/">
+                <LinkedInIcon class="size-4 md:size-6" />
+                Linkedin
+            </SocialPill>
+            <SocialPill href="https://github.com/hache22">
+                <Github class="size-4 md:size-6" />
+                Github
+            </SocialPill>
+            <SocialPill href="mailto:horaciolaphitz99@gmail.com">
+                <Mail class="size-4 md:size-6" />
+                horaciolaphitz99@gmail.com
+            </SocialPill>
+            <SocialPill
+                href="https://drive.google.com/drive/folders/1XRv9ZWegRbOknIgQG1mtivt_4zUy6Y1T?usp=drive_link"
+            >
+                <Certificaciones class="size-4 md:size-6" />
+                Certificaciones
+            </SocialPill>
+        </nav>
+    </div>
+</div>

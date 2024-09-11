@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import SobreMi from "../components/About.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Experiencia from "../components/Experience.astro";
+import BriefCase from "../components/icons/BriefCase.astro";
+import Code from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
+import Hero from "@/components/Hero.astro";
+import TitleSection from "@/components/TitleSection.astro";
+import ProfileCheck from "../components/icons/ProfileCheck.astro";
+---
+
+<Layout
+	title="Portfolio de Horacio Laphitz - Desarrollador Python & Data Analyst "
+	description="Contrata a Horacio Laphitz, para crear soluciones basadas en Datos y Resolucion de Problemas"
+>
+	<main class="px-4">
+		<SectionContainer class="py-16 md:py-44">
+			<Hero />
+		</SectionContainer>
+		<div class="space-y-36">
+			<SectionContainer id="experiencia">
+				<TitleSection>
+					<BriefCase class="size-10" />
+					Experiencia Laboral
+				</TitleSection>
+				<Experiencia />
+			</SectionContainer>
+			<SectionContainer id="proyectos">
+				<TitleSection>
+					<Code class="size-10" />
+					Proyectos
+				</TitleSection>
+			</SectionContainer>
+			<Projects />
+			<SectionContainer id="sobre-mi">
+				<TitleSection>
+					<ProfileCheck class="size-10" />
+					Sobre Mí
+				</TitleSection>
+				<SobreMi />
+			</SectionContainer>
+		</div>
+	</main>
+</Layout>
