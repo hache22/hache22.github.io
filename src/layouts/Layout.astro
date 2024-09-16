@@ -3,6 +3,7 @@ import "@fontsource-variable/onest";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
+import GradientBackground from "@/components/gradientBackground.astro";
 
 interface Props {
 	title: string;
@@ -41,17 +42,11 @@ const { description, title } = Astro.props;
 		<ViewTransitions />
 	</head>
 	<body>
-		<div class="relative h-full w-full bg-slate-200">
-			<div
-				class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[550px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"
-			>
-			</div><div
-				class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[550px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"
-			>
-			</div>
-		</div>
+		<GradientBackground />
 	</body><Header />
-	<slot />
+
+	<slot /><GradientBackground />
+
 	<Footer />
 
 	<style is:global>
