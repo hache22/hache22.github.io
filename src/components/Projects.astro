@@ -148,13 +148,11 @@ const PROJECTS = [
     {
         PROJECTS.map(({ image, title, description, tags, link, github }) => (
             <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-                <div class="w-full md:w-1/2">
-                    <div class="relative flex flex-col items-center col-span-4 row-span-2 gap-8 transition duration-10 ease-in-out transform overflow-clip rounded sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+                <div class="">
+                    <div class="relative flex flex-col items-center col-span-4 row-span-2  transition duration-10 ease-in-out transform overflow-clip rounded  md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
                         <img
                             alt="Proyecto"
-                            class=" object-top 
-                            h-5  sm:h-full md:scale-110 md:group-hover:scale-105"
-                            loading="eager"
+                            class=" transition duration-500  md:scale-110 md:group-hover:scale-105"
                             src={image}
                         />
                     </div>
