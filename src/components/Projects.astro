@@ -53,7 +53,7 @@ const PROJECTS = [
     {
         title: "Proyecto Ingenieria de Datos con Python",
         description:
-            "Descripción de Proyecto de Extracción, Transformación y Carga (ETL) de Datos. Durante mi trayectoria de tres años en análisis de datos, he liderado un proyecto estratégico centrado en la obtención, transformación y almacenamiento de información crítica. Objetivo del Proyecto: Diseñé y ejecuté un proceso ETL para adquirir datos relevantes sobre el Producto Interno Bruto (PIB) de todos los países del mundo. El objetivo principal era proporcionar a la organización una visión integral y actualizada de las economías globales",
+            "Descripción de Proyecto de Extracción, Transformación y Carga (ETL) de Datos.  El objetivo principal es proporcionar a la organización una visión integral y actualizada de las economías globales, haciendo uso de informacion pública.",
 
         link: "",
         github: "https://github.com/hache22/ETL?tab=readme-ov-file",
@@ -63,7 +63,7 @@ const PROJECTS = [
     {
         title: "Proyecto Prediccion de Precio de Acciones",
         description:
-            "Objetivo del Proyecto: El objetivo principal es predecir los precios de las acciones en la Bolsa de Nueva York utilizando técnicas de aprendizaje automático.Tecnologías y Herramientas Utilizadas: El proyecto está implementado en Python.Se emplea algoritmo de machine learning para realizar las predicciones. Pasos Clave: Extracción de Datos: Se recopilan datos históricos de precios de acciones. Preprocesamiento: Limpieza y transformación de los datos para su uso en el modelo. Entrenamiento del Modelo: Se utilizan algoritmos de machine learning para entrenar un modelo capaz de predecir futuros precios de acciones. Evaluación y Validación: Se evalúa la precisión del modelo utilizando datos de prueba. Importancia: Este proyecto tiene aplicaciones prácticas en el mundo real, ya que puede ayudar a los inversores a tomar decisiones informadas sobre sus inversiones en el mercado de valores.",
+            "El objetivo principal de este Proyecto es predecir los precios de las acciones en la Bolsa de Nueva York utilizando técnicas de aprendizaje automático.Tecnologías y Herramientas Utilizadas: El proyecto está implementado en Python.Se emplea algoritmo de machine learning para realizar las predicciones. Pasos Clave: Extracción de Datos: Se recopilan datos históricos de precios de acciones. Preprocesamiento: Limpieza y transformación de los datos para su uso en el modelo. Entrenamiento del Modelo: Se utilizan algoritmos de machine learning para entrenar un modelo capaz de predecir futuros precios de acciones. Evaluación y Validación: Se evalúa la precisión del modelo utilizando datos de prueba. Importancia: Este proyecto tiene aplicaciones prácticas en el mundo real, ya que puede ayudar a los inversores a tomar decisiones informadas sobre sus inversiones en el mercado de valores.",
         link: "",
         github: "https://github.com/hache22/PredicePrecioAcciones",
         image: "./projects/p11.png",
@@ -81,7 +81,7 @@ const PROJECTS = [
     {
         title: "Proyecto Modelo Aprendizaje Automático",
         description:
-            "Obejetivo del Proyecto: busca explorar la creacion de modelos de Regresión Lineal para que, en este caso , el algoritmo encuentre su propio camino para realizar las conversiones de grados C° a F°. Aplicación: El mismo se puede utilizar para poder tener información detallada de conversiones de Temperatura en tiempo real.",
+            "Este proyecto busca explorar la creacion de modelos de Regresión Lineal para que, en este caso , el algoritmo encuentre su propio camino para realizar las conversiones de grados C° a F°. Aplicación: El mismo se puede utilizar para poder tener información detallada de conversiones de Temperatura en tiempo real.",
         link: "",
         github: "https://github.com/hache22/Regresion_Lineal",
         image: "./projects/p3.png",
@@ -99,7 +99,7 @@ const PROJECTS = [
     {
         title: "Proyecto Redes Neuronales",
         description:
-            "Objetivo: Crear un Script de Python que utilice las bibliotecas Python como TensorFlow - Pandas - Numpy - Matplotlib.pyplot-random para crear un autocodificador de Imágenes.",
+            "Objetivo: hace uso de un Script de Python que utilice las bibliotecas Python como TensorFlow - Pandas - Numpy - Matplotlib.pyplot-random para crear un autocodificador de Imágenes.",
         link: "",
         github: "https://github.com/hache22/Autoencoder",
         image: "./projects/p5.png",
@@ -126,7 +126,7 @@ const PROJECTS = [
     {
         title: "Proyecto Árbol de Decisión",
         description:
-            "Objetivo: Crear un algoritmo de Decision-Tree para hacer predicciones, el mismo utiliza el set de datos 'Titanic'. Aplicaciones: Los Arboles de Decision son una tecnica muy utilizada para la toma de decisiones, permite tener más de una alternativa posible sobre el camino a seguir basandose en los Datos.",
+            "Proyecto que hace uso de un algoritmo de Decision-Tree para hacer predicciones, el mismo utiliza el set de datos 'Titanic'. Aplicaciones: Los Arboles de Decision son una tecnica muy utilizada para la toma de decisiones, permite tener más de una alternativa posible sobre el camino a seguir basandose en los Datos.",
         link: "",
         github: "https://github.com/hache22/TITANIC-Arbol_de_Decision",
         image: "./projects/p8.png",
@@ -135,7 +135,7 @@ const PROJECTS = [
     {
         title: "Proyecto Clustering",
         description:
-            "Objetivo: Este Proyecto busca agrupar compradores de casas de la ciudad de California Estados Unidos, haciendo uso del proceso llamado 'Clustering'. Aplicaciones: El proceso de Clustering es muy demandado en el área de los Datos dada su capacidad para poder tener una forma de 'Concentrar' a los usuarios por grupos.",
+            "Este Proyecto busca agrupar compradores de casas de la ciudad de California Estados Unidos, haciendo uso del proceso llamado 'Clustering'. Aplicaciones: El proceso de Clustering es muy demandado en el área de los Datos dada su capacidad para poder tener una forma de 'Concentrar' a los usuarios por grupos.",
         link: "",
         github: "https://github.com/hache22/PrediccionImagenes",
         image: "./projects/p9.png",
@@ -147,12 +147,12 @@ const PROJECTS = [
 <div class="flex flex-col gap-y-16">
     {
         PROJECTS.map(({ image, title, description, tags, link, github }) => (
-            <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+            <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-6 md:space-y-0">
                 <div class="">
-                    <div class="relative flex flex-col items-center col-span-4 row-span-2  transition duration-10 ease-in-out transform overflow-clip rounded  md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+                    <div class="relative flex flex-col items-center col-span-8 row-span-8  transition duration-10 ease-in-out transform overflow-clip rounded  md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
                         <img
                             alt="Proyecto"
-                            class=" transition duration-500  md:scale-110 md:group-hover:scale-105"
+                            class="transition duration-500  md:scale-60 md:group-hover:scale-90"
                             src={image}
                         />
                     </div>

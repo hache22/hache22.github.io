@@ -18,7 +18,7 @@ const { description, title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
@@ -41,17 +41,26 @@ const { description, title } = Astro.props;
 		<title>{title}</title>
 		<ViewTransitions />
 	</head>
-	<body> </body><Header />
-	<div
-		class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-	>
-		<GradientBackground />
-	</div>
-	<slot /><GradientBackground />
+	<body
+		><Header />
+		<div
+			class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+		>
+			<GradientBackground />
+		</div>
+		<slot />
+		<br />
 
-	<Footer />
-
-	<style is:global>
+		<Footer />
+		<div class="text-center text-white initial-scale=1.0">
+			<img
+				src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+				alt="Python Logo"
+				class="w-auto h-auto mx-auto"
+				style="transform: translateY(-145%);"
+			/>
+		</div>
+	</body><style is:global>
 		:root {
 			color-scheme: light dark;
 		}
@@ -67,6 +76,14 @@ const { description, title } = Astro.props;
 			flex-direction: column;
 			min-height: 100vh;
 			overscroll-behavior: none;
+		}
+
+		@media screen and (max-width: 600px) {
+			/* Estilos para pantallas pequeñas */
+			.mi-elemento {
+				font-size: 14px;
+				margin: 10px;
+			}
 		}
 
 		@media (prefers-reduced-motion: reduce) {
