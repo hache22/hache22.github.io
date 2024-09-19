@@ -11,12 +11,12 @@ import Informe from "./icons/Histograma.astro";
 const TAGS = {
     Python: {
         name: "Python",
-        class: "bg-black text-white",
+        class: "bg-[#003159] text-white",
         icon: Python,
     },
     JupyterNotebook: {
         name: "Jupyter Notebook",
-        class: "bg-[#003159] text-white",
+        class: "bg-black text-white",
         icon: JupyterNotebook,
     },
     ai: {
@@ -36,7 +36,7 @@ const TAGS = {
     },
     Informe: {
         name: "Analisis de Datos",
-        class: "bg-[#003159] text-white",
+        class: "bg-whithe text-white",
         icon: Informe,
     },
 };
@@ -53,7 +53,7 @@ const PROJECTS = [
     {
         title: "Proyecto Ingenieria de Datos con Python",
         description:
-            "Descripción de Proyecto de Extracción, Transformación y Carga (ETL) de Datos.  El objetivo principal es proporcionar a la organización una visión integral y actualizada de las economías globales, haciendo uso de informacion pública.",
+            "Descripción de Proyecto de Extracción, Transformación y Carga (ETL) de Datos.  El objetivo principal es proporcionar a la organización una visión integral y actualizada de las economías globales, haciendo uso de información pública.",
 
         link: "",
         github: "https://github.com/hache22/ETL?tab=readme-ov-file",
@@ -81,7 +81,7 @@ const PROJECTS = [
     {
         title: "Proyecto Modelo Aprendizaje Automático",
         description:
-            "Este proyecto busca explorar la creacion de modelos de Regresión Lineal para que, en este caso , el algoritmo encuentre su propio camino para realizar las conversiones de grados C° a F°. Aplicación: El mismo se puede utilizar para poder tener información detallada de conversiones de Temperatura en tiempo real.",
+            "Este proyecto busca explorar la creacion de modelos de Regresión Lineal para que, en este caso , el algoritmo encuentre su propio camino para realizar las conversiones de grados C° a F°. El mismo se puede utilizar para poder tener información detallada de conversiones de Temperatura en tiempo real.",
         link: "",
         github: "https://github.com/hache22/Regresion_Lineal",
         image: "./projects/p3.png",
@@ -90,7 +90,7 @@ const PROJECTS = [
     {
         title: "Proyecto Deep Learning - GAN'S",
         description:
-            "Contexto: Fueron propuestas por Ian Goodfellow y su equipo en 2014. Objetivo: Consiste en la creacion de dos redes neuronales que compiten entre sí en un 'juego de suma cero'.",
+            "Fueron propuestas por Ian Goodfellow y su equipo en 2014. Consiste en la creacion de dos redes neuronales que compiten entre sí en un 'juego de suma cero'.",
         link: "",
         github: "https://github.com/hache22/Redes-Generativas-Adversariales",
         image: "./projects/p4.png",
@@ -108,7 +108,7 @@ const PROJECTS = [
     {
         title: "Proyecto Redes Neuronales Convolucionales - CNN",
         description:
-            "Script de Python que utiliza las bibliotecas de: TensorFlow - Pandas - Numpy - Matplotlib.pyplot-random para crear una Red Neuronal Convolucional para el reconocimiento de Imágenes.",
+            "Script de Python que utiliza las bibliotecas de: TensorFlow - Pandas - Numpy - Matplotlib.pyplot- random para crear una Red Neuronal Convolucional para el reconocimiento de Imágenes.",
         link: "",
         github: "https://github.com/hache22/Redes-Convolucionales",
         image: "./projects/p6.png",
@@ -126,7 +126,7 @@ const PROJECTS = [
     {
         title: "Proyecto Árbol de Decisión",
         description:
-            "Proyecto que hace uso de un algoritmo de Decision-Tree para hacer predicciones, el mismo utiliza el set de datos 'Titanic'. Aplicaciones: Los Arboles de Decision son una tecnica muy utilizada para la toma de decisiones, permite tener más de una alternativa posible sobre el camino a seguir basandose en los Datos.",
+            "Proyecto que hace uso de un algoritmo de Decision-Tree para hacer predicciones, el mismo utiliza el set de datos 'Titanic'. Los Arboles de Decision son una tecnica muy utilizada para la toma de decisiones, permite tener más de una alternativa posible sobre el camino a seguir basandose en los Datos.",
         link: "",
         github: "https://github.com/hache22/TITANIC-Arbol_de_Decision",
         image: "./projects/p8.png",
@@ -135,7 +135,7 @@ const PROJECTS = [
     {
         title: "Proyecto Clustering",
         description:
-            "Este Proyecto busca agrupar compradores de casas de la ciudad de California Estados Unidos, haciendo uso del proceso llamado 'Clustering'. Aplicaciones: El proceso de Clustering es muy demandado en el área de los Datos dada su capacidad para poder tener una forma de 'Concentrar' a los usuarios por grupos.",
+            "Este Proyecto busca agrupar compradores de casas de la ciudad de California Estados Unidos, haciendo uso del proceso llamado 'Clustering'. El proceso de Clustering es muy demandado en el área de los Datos dada su capacidad para poder tener una forma de 'Concentrar' a los usuarios por grupos.",
         link: "",
         github: "https://github.com/hache22/PrediccionImagenes",
         image: "./projects/p9.png",
@@ -147,12 +147,12 @@ const PROJECTS = [
 <div class="flex flex-col gap-y-16">
     {
         PROJECTS.map(({ image, title, description, tags, link, github }) => (
-            <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-6 md:space-y-0">
+            <article class="flex space-x-0 space-y-0 group md:flex-row md:space-x-6 md:space-y-0">
                 <div class="">
-                    <div class="relative flex flex-col items-center col-span-8 row-span-8  transition duration-10 ease-in-out transform overflow-clip rounded  md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+                    <div class="relative flex flex-col items-center col-span-8 row-span-8  transition duration-10 ease-in-out transform overflow-clip rounded  md:group-hover:-translate-y-1  lg:hover:border-white lg:hover:bg-white-200">
                         <img
                             alt="Proyecto"
-                            class="transition duration-500  md:scale-60 md:group-hover:scale-90"
+                            class="transition duration-500  md:group-hover:scale-90"
                             src={image}
                         />
                     </div>
@@ -188,7 +188,7 @@ const PROJECTS = [
                             )}
                             {link && (
                                 <LinkButton href={link}>
-                                    <Link class="size-4" />
+                                    <Link class="size-6" />
                                     Vista Previa
                                 </LinkButton>
                             )}
