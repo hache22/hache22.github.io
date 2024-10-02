@@ -8,6 +8,7 @@ import IA from "./icons/AI.astro";
 import Brain from "./icons/Brain.astro";
 import Analisis from "./icons/Analisis.astro";
 import Informe from "./icons/Histograma.astro";
+import R from "./icons/R.astro";
 const TAGS = {
     Python: {
         name: "Python",
@@ -16,7 +17,7 @@ const TAGS = {
     },
     JupyterNotebook: {
         name: "Jupyter Notebook",
-        class: "bg-black text-white",
+        class: "bg-[#003159] text-white",
         icon: JupyterNotebook,
     },
     ai: {
@@ -34,26 +35,32 @@ const TAGS = {
         class: "bg-[#003159] text-white",
         icon: Analisis,
     },
-    Informe: {
-        name: "Analisis de Datos",
-        class: "bg-whithe text-white",
+    Estadistica: {
+        name: "Estadistica",
+        class: "bg-[#003159] text-white",
         icon: Informe,
+    },
+    R: {
+        name: "Markdown",
+        class: "bg-[#003159] text-white",
+        icon: R,
     },
 };
 const PROJECTS = [
     {
-        title: "Descargar Proyecto Completo Analitico de Datos",
+        title: "Informe Analítico de Datos",
         link: "https://drive.google.com/file/d/1YlbcVzBRQ5VPUmMdw42wVI5TcxjwMQj4/view?usp=drive_link",
         github: "",
         description:
-            "Informe Analíco de Datos sobre la Empresa 'Cyclistic'. El objetivo de mi script es consolidar los datos descargados de Divvy en un único marco de datos. A partir de ahí, realizo un análisis sencillo pero revelador para responder a la pregunta clave: '¿Cómo difieren los usos que los miembros y los ciclistas ocasionales hacen de las bicicletas Divvy?'",
+            `Análisis de uso de bicicletas Divvy en miembros vs. usuarios casuales. Consolidación de datos para responder preguntas clave sobre los patrones de uso. Estudio comparativo del uso de bicicletas Divvy y sus implicaciones para estrategias de negocio.`,
         image: "./projects/grafico1.png",
-        tags: [TAGS.Python, TAGS.AnalisisDatos],
+        tags: [TAGS.R, TAGS.AnalisisDatos, TAGS.Estadistica],
     },
     {
-        title: "Proyecto Ingenieria de Datos con Python",
+        title: "Ingeniería de Datos con Python",
         description:
-            "Descripción de Proyecto de Extracción, Transformación y Carga (ETL) de Datos.  El objetivo principal es proporcionar a la organización una visión integral y actualizada de las economías globales, haciendo uso de información pública.",
+            `Proyecto en el que se despliega técnica ETL para ingenieria de datos con python.  
+            El objetivo principal es proporcionar a la organización una visión integral y actualizada de las economías globales, haciendo uso de información pública.`,
 
         link: "",
         github: "https://github.com/hache22/ETL?tab=readme-ov-file",
@@ -61,81 +68,84 @@ const PROJECTS = [
         tags: [TAGS.Python, TAGS.AnalisisDatos],
     },
     {
-        title: "Proyecto Prediccion de Precio de Acciones",
+        title: "Script para Predicción del Precio de Acciones",
         description:
-            "El objetivo principal de este Proyecto es predecir los precios de las acciones en la Bolsa de Nueva York utilizando técnicas de aprendizaje automático.Tecnologías y Herramientas Utilizadas: El proyecto está implementado en Python.Se emplea algoritmo de machine learning para realizar las predicciones. Pasos Clave: Extracción de Datos: Se recopilan datos históricos de precios de acciones. Preprocesamiento: Limpieza y transformación de los datos para su uso en el modelo. Entrenamiento del Modelo: Se utilizan algoritmos de machine learning para entrenar un modelo capaz de predecir futuros precios de acciones. Evaluación y Validación: Se evalúa la precisión del modelo utilizando datos de prueba. Importancia: Este proyecto tiene aplicaciones prácticas en el mundo real, ya que puede ayudar a los inversores a tomar decisiones informadas sobre sus inversiones en el mercado de valores.",
+            `Predicción de precios de acciones en la Bolsa de Nueva York utilizando modelos de machine learning en Python. 
+            Extracción, preprocesamiento y entrenamiento de datos para generar predicciones precisas y apoyar la toma de decisiones de inversión`,
         link: "",
         github: "https://github.com/hache22/PredicePrecioAcciones",
         image: "./projects/p11.png",
         tags: [TAGS.Python, TAGS.JupyterNotebook, TAGS.AnalisisDatos],
     },
     {
-        title: "Proyecto Análisis de Datos 'Juegos de los Warriors'",
+        title: "Análisis de Datos: Warriors Games",
         description:
-            "Proyecto orientado a la Comparación de DATOS, se toman todos los partidos tanto de local como visitante del equipo de baloncesto 'Golden State Warriors', posteriormente se comunican los hallazgos fruto del análisis.",
+            `Análisis comparativo del rendimiento de los Golden State Warriors en juegos de local y visitante. Estudio detallado de los datos para identificar patrones y tendencias.`,
         link: "",
         github: "https://github.com/hache22/Warriors-Games",
         image: "./projects/p2.png",
         tags: [TAGS.Python, TAGS.JupyterNotebook, TAGS.AnalisisDatos],
     },
     {
-        title: "Proyecto Modelo Aprendizaje Automático",
+        title: "Aprendizaje Automático: Modelo Regresion Lineal",
         description:
-            "Este proyecto busca explorar la creacion de modelos de Regresión Lineal para que, en este caso , el algoritmo encuentre su propio camino para realizar las conversiones de grados C° a F°. El mismo se puede utilizar para poder tener información detallada de conversiones de Temperatura en tiempo real.",
+            `Desarrollo de un modelo de regresión lineal para convertir grados Celsius a Fahrenheit de manera automática. La herramienta permite obtener conversiones de temperatura en tiempo real.`,
         link: "",
         github: "https://github.com/hache22/Regresion_Lineal",
         image: "./projects/p3.png",
         tags: [TAGS.Python, TAGS.JupyterNotebook, TAGS.ai],
     },
     {
-        title: "Proyecto Deep Learning - GAN'S",
+        title: "Deep Learning - GAN'S",
         description:
-            "Fueron propuestas por Ian Goodfellow y su equipo en 2014. Consiste en la creacion de dos redes neuronales que compiten entre sí en un 'juego de suma cero'.",
+            `Este proyecto crea Red Generativa Adversarial (GAN), que consiste en dos redes neuronales en competencia para generar nuevos datos.`,
         link: "",
         github: "https://github.com/hache22/Redes-Generativas-Adversariales",
         image: "./projects/p4.png",
         tags: [TAGS.Python, TAGS.JupyterNotebook, TAGS.RedesNeuronales],
     },
     {
-        title: "Proyecto Redes Neuronales",
+        title: "Redes Neuronales - AutoEncoder",
         description:
-            "Objetivo: hace uso de un Script de Python que utilice las bibliotecas Python como TensorFlow - Pandas - Numpy - Matplotlib.pyplot-random para crear un autocodificador de Imágenes.",
+            `Desarrollo de un autocodificador de imágenes en Python utilizando TensorFlow, Pandas, NumPy, Matplotlib y random. 
+            El proyecto busca crear un modelo capaz de aprender las características latentes de un conjunto de imágenes y reconstruirlas de forma precisa.`,
         link: "",
         github: "https://github.com/hache22/Autoencoder",
         image: "./projects/p5.png",
         tags: [TAGS.Python, TAGS.JupyterNotebook, TAGS.RedesNeuronales],
     },
     {
-        title: "Proyecto Redes Neuronales Convolucionales - CNN",
+        title: "Redes Neuronales Convolucionales - CNN",
         description:
-            "Script de Python que utiliza las bibliotecas de: TensorFlow - Pandas - Numpy - Matplotlib.pyplot- random para crear una Red Neuronal Convolucional para el reconocimiento de Imágenes.",
+            `Proyecto creado en python que crea una CNN para reconocimiento de imágenes. 
+            Utiliza TensorFlow, Pandas, NumPy y Matplotlib para construir y entrenar una red neuronal convolucional.`,
         link: "",
         github: "https://github.com/hache22/Redes-Convolucionales",
         image: "./projects/p6.png",
         tags: [TAGS.Python, TAGS.JupyterNotebook, TAGS.RedesNeuronales],
     },
     {
-        title: "Proyecto Transferencia de Aprendizaje",
+        title: "Transferencia de Aprendizaje",
         description:
-            "Este Proyecto utiliza un modelo secuencial previamente entrenado y lo aplica al reconocimiento especifico de imagenes nuevas dentro del re-entrenamiento del modelo.",
+            `Utilización de modelo secuencial pre-entrenado para reconocimiento de nuevas imágenes. Se Reentrena el modelo secuencial, adaptandolo  para reconocer nuevas imágenes específicas.`,
         link: "",
         github: "https://github.com/hache22/PrediccionImagenes",
         image: "./projects/p7.png",
         tags: [TAGS.Python, TAGS.JupyterNotebook, TAGS.ai],
     },
     {
-        title: "Proyecto Árbol de Decisión",
+        title: "Análisis de Datos: Árbol de Decisión",
         description:
-            "Proyecto que hace uso de un algoritmo de Decision-Tree para hacer predicciones, el mismo utiliza el set de datos 'Titanic'. Los Arboles de Decision son una tecnica muy utilizada para la toma de decisiones, permite tener más de una alternativa posible sobre el camino a seguir basandose en los Datos.",
+            `Análisis de supervivencia en el Titanic. Modelo de Árbol de Decisión Random Forest para predecir la supervivencia de pasajeros basado en edad, sexo, clase social y otros factores.`,
         link: "",
         github: "https://github.com/hache22/TITANIC-Arbol_de_Decision",
         image: "./projects/p8.png",
-        tags: [TAGS.Python, TAGS.JupyterNotebook, TAGS.ai, TAGS.AnalisisDatos],
+        tags: [TAGS.Python, TAGS.JupyterNotebook, TAGS.AnalisisDatos],
     },
     {
-        title: "Proyecto Clustering",
+        title: "Análisis de Datos: Clustering",
         description:
-            "Este Proyecto busca agrupar compradores de casas de la ciudad de California Estados Unidos, haciendo uso del proceso llamado 'Clustering'. El proceso de Clustering es muy demandado en el área de los Datos dada su capacidad para poder tener una forma de 'Concentrar' a los usuarios por grupos.",
+            `Segmentación de mercado inmobiliario en California. Se hace uso de Clustering K-means para identificar grupos de compradores basados en ingresos, tamaño de la familia y preferencias de ubicación.`,
         link: "",
         github: "https://github.com/hache22/PrediccionImagenes",
         image: "./projects/p9.png",
@@ -144,12 +154,12 @@ const PROJECTS = [
 ];
 ---
 
-<div class="flex flex-col gap-y-16">
+<div class="flex flex-col">
     {
         PROJECTS.map(({ image, title, description, tags, link, github }) => (
             <article class="flex space-x-0 space-y-0 group md:flex-row md:space-x-6 md:space-y-0">
-                <div class="">
-                    <div class="relative flex flex-col items-center col-span-8 row-span-8  transition duration-10 ease-in-out transform overflow-clip rounded  md:group-hover:-translate-y-1  lg:hover:border-white lg:hover:bg-white-200">
+                <div class="flex">
+                    <div class="relative flex flex-col items-center  transition duration-10 ease-in-out transform overflow-clip rounded  md:group-hover:-translate-y-0  lg:hover:border-white lg:hover:bg-white-200">
                         <img
                             alt="Proyecto"
                             class="transition duration-500  md:group-hover:scale-90"
@@ -176,20 +186,20 @@ const PROJECTS = [
                             ))}
                         </ul>
 
-                        <div class="mt-2 text-gray-700 dark:text-gray-400">
+                        <div class="mt-2 text-white-800 dark:text-gray-400">
                             {description}
                         </div>
-                        <footer class="flex items-end justify-start mt-4 gap-x-4">
+                        <footer class="flex items-end justify-start mt-4 gap-x-2">
                             {github && (
                                 <LinkButton href={github}>
                                     <GitHub class="size-6" />
-                                    Código
+                                    Repositorio
                                 </LinkButton>
                             )}
                             {link && (
                                 <LinkButton href={link}>
                                     <Link class="size-6" />
-                                    Vista Previa
+                                    Visualizar Informe
                                 </LinkButton>
                             )}
                         </footer>
